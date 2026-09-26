@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PANEL MINI - 085881599723</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0a0a0f;color:#fff}
+.header{background:linear-gradient(135deg,#6a11cb,#2575fc);padding:26px;text-align:center;border-radius:0 0 26px 26px}
+.container{max-width:420px;margin:auto;padding:14px}
+.card{background:#181820;border:1px solid #262633;border-radius:16px;padding:14px;margin-bottom:12px}
+.service{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #232332}
+.btn{width:100%;background:#00ff88;color:#000;border:0;padding:13px;border-radius:12px;font-weight:700;margin-top:10px}
+.qris{background:#fff;border-radius:14px;padding:12px;text-align:center}.qris img{width:220px;height:220px}
+input,select{width:100%;padding:12px;border-radius:11px;border:1px solid #2e2e3f;background:#12121a;color:#fff;margin:5px 0}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>⚡ PANEL MINI</h1>
+<p>085881599723 • Termurah & Tercepat</p>
+</div>
+<div class="container">
+<div class="card">
+<div class="service"><div>👁️ 1.000 Views TikTok</div><b style="color:#00ff88">Rp 3.000</b></div>
+<div class="service"><div>❤️ 100 Likes TikTok</div><b style="color:#00ff88">Rp 5.000</b></div>
+<div class="service"><div>👥 100 Followers IG</div><b style="color:#00ff88">Rp 8.000</b></div>
+<div class="service"><div>👥 100 Followers TikTok</div><b style="color:#00ff88">Rp 10.000</b></div>
+<div class="service"><div>👑 1.000 Followers TikTok</div><b style="color:#00ff88">Rp 65.000</b></div>
+</div>
+<div class="card">
+<input id="user" placeholder="Username @...">
+<select id="layanan">
+<option>1000 Views TikTok - Rp 3000</option>
+<option>100 Likes TikTok - Rp 5000</option>
+<option>100 Followers IG - Rp 8000</option>
+<option>100 Followers TikTok - Rp 10000</option>
+<option>1000 Followers TikTok - Rp 65000</option>
+</select>
+<button class="btn" onclick="document.getElementById('bayar').scrollIntoView({behavior:'smooth'})">LANJUT BAYAR ↓</button>
+</div>
+<div class="card" id="bayar">
+<h3 style="text-align:center">📱 Bayar QRIS DANA</h3>
+<div class="qris">
+<img src="qris.jpg">
+<p style="color:#000;font-weight:800">085881599723</p>
+</div>
+<button class="btn" style="background:#25D366;color:#fff" onclick="wa()">KIRIM BUKTI WA 💬</button>
+</div>
+</div>
+<script>
+function wa(){
+let u=document.getElementById('user').value;
+let l=document.getElementById('layanan').value;
+let no='6285881599723';
+if(!u){alert('Isi username dulu pung!');return;}
+window.open('https://wa.me/'+no+'?text=Order%20'+encodeURIComponent(l)+'%20untuk%20'+encodeURIComponent(u),'_blank');
+}
+</script>
+</body>
+</html>
